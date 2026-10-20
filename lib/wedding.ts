@@ -1,10 +1,15 @@
 export const CEREMONY_AT = "2027-07-10T11:00:00+09:00";
 
+const whenDate = "2027년 7월 10일 토요일";
+const whenTime = "오전 11시";
+
 export const wedding = {
   groom: "최예준",
   bride: "양윤주",
   place: "서울대학교 연구공원",
-  when: "2027년 7월 10일 토요일 오전 11시",
+  whenDate,
+  whenTime,
+  when: `${whenDate} ${whenTime}`,
   iso: CEREMONY_AT,
   mapUrl: "https://map.naver.com/p/search/서울대학교%20연구공원",
 } as const;

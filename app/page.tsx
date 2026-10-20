@@ -105,7 +105,9 @@ export default function Home() {
               <Countdown />
               <p className="when">
                 <IconCalendar />
-                <time dateTime={wedding.iso}>{wedding.when}</time>
+                <time dateTime={wedding.iso}>
+                  {wedding.whenDate} <span className="when-time">{wedding.whenTime}</span>
+                </time>
               </p>
               <p className="where">
                 <IconPin />
@@ -130,7 +132,7 @@ export default function Home() {
               <ul className="facts">
                 <li>
                   <IconPill />
-                  <span>제약사 마케팅</span>
+                  <span>제약 마케팅</span>
                 </li>
                 <li>
                   <IconChart />
@@ -215,7 +217,9 @@ export default function Home() {
             <h2>예식 안내</h2>
             <p className="sheet-label">일시</p>
             <p className="sheet-strong">
-              <time dateTime={wedding.iso}>{wedding.when}</time>
+              <time dateTime={wedding.iso}>
+                {wedding.whenDate} <span className="when-time">{wedding.whenTime}</span>
+              </time>
             </p>
             <p className="sheet-label">장소</p>
             <p className="sheet-strong">{wedding.place}</p>
